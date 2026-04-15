@@ -75,8 +75,7 @@ body {
 
 /* ── Page content ───────────────────────────────────────── */
 #page-content {
-  padding: 28px 32px;
-  max-width: 1200px;
+  padding: 28px 40px;
 }
 
 /* ── Metric cards grid ──────────────────────────────────── */
