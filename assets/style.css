@@ -1,0 +1,290 @@
+:root {
+  --accent: #0071e3;
+  --positive: #1c8a3e;
+  --negative: #c0392b;
+  --bg: #f5f5f7;
+  --panel: #ffffff;
+  --ink: #1d1d1f;
+  --ink-2: #6e6e73;
+  --ink-3: #aeaeb2;
+  --line: #e5e5ea;
+  --radius: 12px;
+}
+
+body {
+  background: var(--bg) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  color: var(--ink) !important;
+  font-size: 13px;
+}
+
+/* ── Sidebar ────────────────────────────────────────────── */
+#sidebar {
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  min-height: 100vh;
+  padding: 24px 12px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+
+.brand-icon {
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.nav-pills .nav-link {
+  color: var(--ink-2) !important;
+  font-size: 13px !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  margin-bottom: 2px !important;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background: var(--accent) !important;
+  color: white !important;
+}
+
+/* ── Page content ───────────────────────────────────────── */
+#page-content {
+  padding: 28px 32px;
+  max-width: 1200px;
+}
+
+/* ── Metric cards grid ──────────────────────────────────── */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: var(--ink-2);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.metric-sub {
+  font-size: 11px;
+  margin-top: 4px;
+  color: var(--ink-2);
+}
+
+/* ── Panel ──────────────────────────────────────────────── */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+/* Inside a CSS grid the gap handles spacing; also stretch to fill row height */
+.panels-grid .panel {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.panel-sub {
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+/* ── Colors ─────────────────────────────────────────────── */
+.positive { color: var(--positive) !important; font-weight: 500; }
+.negative { color: var(--negative) !important; font-weight: 500; }
+
+/* ── Buttons ────────────────────────────────────────────── */
+.btn-primary {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  font-size: 13px !important;
+  padding: 5px 14px !important;
+  border-radius: 8px !important;
+}
+
+.btn-outline-secondary {
+  font-size: 13px !important;
+  padding: 5px 14px !important;
+  border-radius: 8px !important;
+}
+
+.btn-outline-danger {
+  font-size: 13px !important;
+  padding: 5px 14px !important;
+  border-radius: 8px !important;
+}
+
+/* ── Forms ──────────────────────────────────────────────── */
+.form-control, .form-select {
+  font-size: 13px !important;
+  border-radius: 8px !important;
+  border-color: var(--line) !important;
+}
+
+.form-label {
+  font-size: 12px !important;
+  color: var(--ink-2) !important;
+  margin-bottom: 4px !important;
+  font-weight: 500;
+}
+
+/* ── Tables ─────────────────────────────────────────────── */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td,
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  font-size: 12px !important;
+  font-family: inherit !important;
+  padding: 8px 12px !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  background: var(--bg) !important;
+  color: var(--ink-2) !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* ── Account card ───────────────────────────────────────── */
+.account-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.account-eyebrow {
+  font-size: 11px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.account-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.account-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.account-stat dt {
+  font-size: 11px;
+  color: var(--ink-2);
+  margin-bottom: 2px;
+}
+
+.account-stat dd {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ── Return bar ─────────────────────────────────────────── */
+.return-bar-row {
+  margin-bottom: 16px;
+}
+
+.return-bar-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.return-bar-track {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.return-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.return-bar-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--ink-2);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .metrics-row { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .metrics-row { grid-template-columns: repeat(2, 1fr); }
+  #page-content { padding: 16px; }
+}
